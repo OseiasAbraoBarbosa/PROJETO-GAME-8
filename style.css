@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    background-color: #009c3b;
+}
+
+.panel{
+    width: 305px;
+    height: 305px;
+    border-radius: 10px;
+}
+
+.modal{
+    position: absolute;
+    transition: all .5s;
+}
+
+#startScreen{
+    background: url('../assets/img/intro.png');
+    opacity: 1;
+    z-index: 1;
+}
+
+#overScreen{
+    background: url('../assets/img/win.png');
+    opacity: 0;
+    z-index: -1;
+}
+
+#container{
+    position: relative;
+    margin: 50px auto;
+    background-color: #ffdf00;
+    border: outset;
+    box-shadow: 2px 2px 5px rgba(0, 39, 118, 0.5);
+}
+
+.tile{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    transition: left .5s, top .5s;
+    background-color: #ffffff;
+}
+
+.tile:hover{
+    border: inset;
+    border-radius: 10px;
+}
